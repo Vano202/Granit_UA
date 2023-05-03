@@ -1,0 +1,408 @@
+.clear {
+  clear: both;
+}
+
+/* --------------stone-------------------- */
+.stone__plane {
+  position: relative;
+}
+.stoneBg {
+  margin: 0 auto;
+  display: block;
+  max-height: 600px;
+}
+
+.article__stone {
+  font-size: 20px;
+  font-weight: 400;
+}
+.plane-data-img {
+  position: absolute;
+  /*width: 50%;*/
+  top: 0;
+  left: 29%;
+}
+
+.stone__plane-img {
+  position: absolute;
+  min-width: 30px; /* настроить*/
+  min-height: 30px; /* настроить*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stone__text {
+  position: absolute;
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+#stone__surname {
+  top: 50%;
+  left: calc(50% - 60px);
+}
+
+#stone__name {
+  top: 57%;
+  left: calc(50% - 30px);
+}
+
+#stone__patronymic {
+  top: 64%;
+  left: calc(50% - 60px);
+}
+
+#stone__date {
+  top: 72%;
+  left: calc(50% - 105px);
+}
+
+.stone__text i {
+  font-size: 16px;
+}
+.stone__text * {
+  font-family: inherit;
+}
+
+#stone__date {
+  font-size: 20px;
+}
+
+.stone__text:hover {
+  cursor: pointer;
+  /*outline: 1px dashed #5B9A00;*/
+}
+
+/* ---------------panel----------------*/
+.construct__panel .card-header {
+  padding: 10px 10px;
+}
+
+.construct__panel .card-header a {
+  color: black;
+  display: block;
+}
+
+.add-field {
+  height: 15px; /*под вопросом*/
+}
+
+.btn-remove {
+  line-height: 14px;
+  font-size: 13px;
+  position: absolute;
+  right: -35px;
+  top: 3px;
+}
+
+.new-block {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 34px;
+  width: 90%;
+  position: relative;
+}
+
+.new-block input {
+  width: 100%;
+}
+
+.form-text {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.data-img {
+  color: white;
+  position: absolute;
+  top: 10%;
+}
+
+.data-img:hover {
+  cursor: move;
+}
+
+.text__active,
+.img__active {
+  outline: 1px dashed orange;
+}
+
+.closeImg {
+  color: red;
+  display: none;
+  width: 20px;
+  height: 20px;
+  /*color: white;*/
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+}
+
+.closeImg:hover {
+  cursor: pointer;
+}
+
+.plane-data-img .data-img .ui-resizable-se {
+  opacity: 0;
+}
+
+.stone__plane .data-img:hover .closeImg,
+.stone__plane .data-img:hover .ui-rotatable-handle,
+.stone__text:hover .ui-rotatable-handle {
+  display: block;
+}
+
+.stone__plane .data-img:hover .ui-resizable-se {
+  opacity: 1;
+}
+
+/* ползунок для измения размера шрифта*/
+.ui-slider .ui-slider-handle {
+  width: 30px;
+  height: 24px;
+  text-align: center;
+  color: white;
+  background-color: #5b9a00;
+  font-size: 14px;
+}
+
+.ui-slider-horizontal {
+  height: 15px;
+  width: 60%;
+  margin-left: 30%;
+}
+
+.ui-slider-horizontal:before {
+  content: "Размер шрифта:";
+  position: absolute;
+  left: -48%;
+  z-index: 10;
+  font-size: 11px;
+  top: -2px;
+}
+.ui-wrapper .ui-icon {
+  background-color: orange;
+}
+
+.data-img:hover {
+  /*outline: 1px dashed #5B9A00;*/
+}
+
+.construct__header {
+  padding-top: 50px;
+  border-bottom: 2px solid black;
+}
+
+.empty__footer {
+  height: 50px;
+  width: 100%;
+  border-top: 2px solid black;
+  /*margin-top: 50px;*/
+}
+
+.stone__img {
+  max-height: 100px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.stone__img:hover {
+  cursor: pointer;
+}
+
+/* .button_line {
+    margin-right: 10px;
+} */
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+/* buttons*/
+
+/* .construct button  {
+    margin-bottom: 10px;
+    background: #6faa00;
+    border-color: #424f60;
+}
+.construct button:hover {
+    background-color: #5B9A00;
+    cursor: pointer;
+} */
+#modalStone button {
+  background: #6faa00;
+  border-color: #424f60;
+}
+#modalStone button:hover {
+  background-color: #5b9a00;
+}
+#modalStone .ltl-close,
+#modalStone .ltl-close:hover {
+  background: none;
+}
+#closeConstructBtn {
+  /*float: right;*/
+}
+
+/*panel*/
+
+.card {
+  box-shadow: -1px -2px 28px 16px rgba(0, 1, 10, 0.23) inset;
+  -webkit-box-shadow: -1px -2px 28px 16px rgba(0, 1, 10, 0.23) inset;
+  -moz-box-shadow: -1px -2px 28px 16px rgba(0, 1, 10, 0.23) inset;
+}
+
+.scaleImg {
+  max-height: 70px;
+  max-width: 100px;
+}
+
+#epitaph .scaleImg,
+#epitaph .img-blk {
+  max-width: 100%;
+}
+
+/*.collapse .card-body {*/
+/*padding: 0;*/
+/*}*/
+.collapse .card-body .img-list {
+  /*margin: 0;*/
+  max-height: 300px;
+  overflow: auto;
+  margin: -16px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.collapse .card-body .fonts__img-list {
+  margin: -5px;
+}
+/*.img-list {*/
+/*max-height: 300px;*/
+/*overflow: auto;*/
+/*margin: -20px;*/
+/*padding-bottom: 10px;*/
+/*}*/
+
+.hint__message {
+  margin-left: 6%;
+}
+
+/*.card-body {*/
+/*padding: 0;*/
+/*}*/
+
+.card:hover .card-header {
+  background: #424f60;
+  color: #fff;
+}
+.card:hover .card-header a {
+  color: #fff;
+}
+.card-header a {
+  font-size: 16px;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+.collapse .card-body .btn-dark {
+  background-color: #6faa00;
+  border-color: #424f60;
+}
+.collapse .card-body .btn-dark:hover {
+  background-color: #5b9a00;
+}
+
+.new-block .form-text {
+  width: 100%;
+}
+.fonts:before {
+  content: none;
+}
+
+.bx-breadcrumb a,
+.bx-breadcrumb-item {
+  color: #888888;
+  font-size: 12px;
+}
+.bx-breadcrumb a:hover {
+  color: #5b9a00;
+}
+.bx-breadcrumb-item {
+}
+
+.container .rows_block .col-2 {
+  width: 50% !important;
+}
+.item_info a,
+.section_item a {
+  color: #5ea000;
+}
+.section_item a:hover {
+  color: #5b9a00;
+}
+.footer_bottom_inner a {
+  color: #5ea000 !important;
+}
+.addedImg {
+  max-height: 250px;
+  max-width: 250px;
+}
+.printWrapper {
+  /* position: relative; */
+  padding-left: 10%;
+}
+
+@media screen and (max-width: 480px) {
+  .printWrapper {
+    padding-left: 0;
+    left: -40px;
+    position: relative;
+    overflow-y: hidden;
+  }
+  .canvas-back-image {
+    /* left: 0 !important; */
+  }
+  .article__stone {
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .printWrapper {
+    padding-left: 0;
+    left: -55px;
+  }
+}
+ul.menu .see_more,
+ul.menu .see_more a,
+a.dark_link,
+#footer .footer_bottom_inner .phones .phone_wrap a {
+  color: #1d2029 !important;
+}
+.item_block.col-3 {
+  width: 33.3%;
+  max-width: 33.3%;
+}
+@media (max-width: 520px) {
+  .item_block.col-3 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .item_block.col-4 {
+    max-width: 100%;
+  }
+}
+
+.fonts::before {
+  content: none !important;
+}
